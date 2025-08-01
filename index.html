@@ -1,4 +1,81 @@
-<h1>welcome kunchoe App</h1>
-<p>This is first commit</p>
-<p>This is Second commit</p>
-<p>This is third commit</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Add/Subtract Demo</title>
+    <style>
+        body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; padding: 20px; max-width: 600px; margin: auto; background-color: #f9f9f9; }
+        h1 { color: #333; }
+        .calculator-card { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .input-group { margin-bottom: 15px; }
+        input[type="number"] { margin: 5px 0; padding: 10px; font-size: 1rem; width: calc(50% - 15px); border: 1px solid #ccc; border-radius: 4px; }
+        button { margin: 5px; padding: 10px 15px; font-size: 1rem; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background-color: #e9e9e9; }
+        button:hover { background-color: #dcdcdc; }
+        #result { margin-top: 20px; font-weight: bold; font-size: 1.2em; color: #0056b3; min-height: 25px; }
+    </style>
+</head>
+<body>
+
+<div class="calculator-card">
+    <h1>Simple Add & Subtract Demo</h1>
+
+    <div class="input-group">
+        <input type="number" id="num1" placeholder="Enter first number" value="10">
+        <input type="number" id="num2" placeholder="Enter second number" value="5">
+    </div>
+
+    <div>
+        <button id="addButton">Add</button>
+        <button id="subtractButton">Subtract</button>
+    </div>
+
+    <div id="result">Result will be shown here</div>
+</div>
+
+<script>
+    // --- Core Calculation Functions ---
+
+    function add(a, b) {
+        return a + b;
+    }
+
+    function subtract(a, b) {
+        return a - b;
+    }
+
+    // --- DOM Interaction ---
+
+    // Wait for the DOM to be fully loaded to ensure elements are available
+    document.addEventListener('DOMContentLoaded', () => {
+        // Get references to the HTML elements we need to interact with
+        const num1Input = document.getElementById('num1');
+        const num2Input = document.getElementById('num2');
+        const addButton = document.getElementById('addButton');
+        const subtractButton = document.getElementById('subtractButton');
+        const resultDiv = document.getElementById('result');
+
+        // Helper function to get and parse numbers from the input fields.
+        // It defaults to 0 if an input is empty or not a valid number.
+        function getNumbers() {
+            const num1 = parseFloat(num1Input.value) || 0;
+            const num2 = parseFloat(num2Input.value) || 0;
+            return { num1, num2 };
+        }
+
+        // Listen for a click on the "Add" button
+        addButton.addEventListener('click', () => {
+            const { num1, num2 } = getNumbers();
+            resultDiv.textContent = `Result: ${num1} + ${num2} = ${add(num1, num2)}`;
+        });
+
+        // Listen for a click on the "Subtract" button
+        subtractButton.addEventListener('click', () => {
+            const { num1, num2 } = getNumbers();
+            resultDiv.textContent = `Result: ${num1} - ${num2} = ${subtract(num1, num2)}`;
+        });
+    });
+</script>
+
+</body>
+</html>
