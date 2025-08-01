@@ -1,1 +1,3 @@
-# localChoeshey
+# First commit
+A To-Do app helps users organize daily tasks efficiently. With a clean, user-friendly interface, it allows adding, editing, and deleting tasks easily. Users can set deadlines, mark tasks as complete, and categorize them by priority or project. It supports real-time updates and syncs across devices for seamless access. Features like reminders, recurring tasks, and color-coded labels enhance productivity. Whether managing personal chores or work-related goals, this app keeps everything on track. Custom themes and dark mode offer personalization. Secure login ensures data privacy. Ideal for students, professionals, and anyone aiming to stay organized and boost productivity every day.
+
