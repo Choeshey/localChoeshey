@@ -1,3 +1,9 @@
-# First commit
-A To-Do app helps users organize daily tasks efficiently. With a clean, user-friendly interface, it allows adding, editing, and deleting tasks easily. Users can set deadlines, mark tasks as complete, and categorize them by priority or project. It supports real-time updates and syncs across devices for seamless access. Features like reminders, recurring tasks, and color-coded labels enhance productivity. Whether managing personal chores or work-related goals, this app keeps everything on track. Custom themes and dark mode offer personalization. Secure login ensures data privacy. Ideal for students, professionals, and anyone aiming to stay organized and boost productivity every day.
+# JavaScript examples for addition and subtraction
 
+Here are two JavaScript examples for addition and subtraction:
+
+1.A simple, console-based example that shows the core functions.2.An interactive HTML file that uses those functions with input fields and buttons.1. Simple Console-Based DemoThis example contains just the JavaScript logic. You can run this code in a browser's developer console, or using a runtime environment like Node.js.I'll create a file named calculator_logic.js for this.
+
+2. Interactive HTML DemoThis is a more complete demonstration in a single HTML file. It includes input fields for numbers, buttons to trigger the calculations, and a space to display the result.To use it, just save the code below as an HTML file (e.g., add_subtract_demo.html) and open it in your web browser.
+
+The second example is great for a visual demo as it clearly shows the input, action, and output in a user-friendly way. Let me know if you have any other questions
